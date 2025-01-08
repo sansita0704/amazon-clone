@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    /*
+    - By default, when we give height and width to an element, it is actually the height and width of its content.
+    - Then, if we give border or padding to it, it is applied outside the content area.
+    - So, the net height and width of the element increases.
+
+    - But, when we set the border property to border-box, then the specified width and height of the element includes the border and padding of the box.
+    - So, the content area is adjusted accordingly.
+    - So, as we increase the size of the border or padding, content area decreases.
+    - It is a good practice to set this property.
+    */
+
+    border: none;
+}
+
+*:hover,
+*:active {
+    border: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Logo */
+
+.nav-logo {
+    height: 50px;
+    width: 100px;
+}
+
+.logo {
+    background-image: url(Resources/amazon_logo.png);
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+}
+/*
+- A div is visible only when we give it a height and a width.
+- So, we will provide a width and height to nav-logo div.
+*/
+
+.border {
+    border: 1px solid transparent;
+}
+
+.border:hover {
+    border: 1px solid white;
+}
+
+/* Address */
+
+.nav-first {
+    font-size: 1.2rem;
+}
+
+.nav-second {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-address {
+    padding: 8px;
+    margin-right: 5px;
+}
+
+.address-first {
+    margin-left: 15px;
+    color: #ccc;
+}
+
+.address-second {
+    margin-left: 1px;
+}
+
+/* Search Bar */
+
+.nav-search {
+    display: flex;
+    height: 40px;
+    flex-grow: 1;
+    border-radius: 7px;
+    border: 2px solid transparent;
+}
+
+.search-select {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    width: 45px;
+    text-align: center;
+    font-size: 1.3rem;
+    background-color: #e6e6e6;
+    outline: 0;
+    cursor: pointer;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 8px;
+    font-size: 1.5rem;
+    letter-spacing: 5;
+    outline: 0;
+}
+
+.search-button {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 40px;
+    background-color: #fdbd68;
+    color: #0f1111;
+}
+
+.nav-search:hover {
+    border: 2px solid orange;
+}
+
+.search-select:hover {
+    background-color: #d6d5d5;
+}
+
+.search-button:hover {
+    background-color: orange;
+}
+
+/* Language */
+
+.nav-language {
+    display: flex;
+    align-items: center;
+    height: 45px;
+    padding: 8px;
+    margin-left: 5px;
+}
+
+.language-select {
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 2px;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Sign-in */
+
+.nav-sign-in {
+    padding: 8px;
+}
+
+.sign-in-text {
+    margin-left: 5px;
+}
+
+.sign-in-select {
+    background: none;
+    color: white;
+    outline: 0;
+    cursor: pointer;
+}
+
+/* Orders */
+
+.nav-orders {
+    padding: 8px;
+}
+
+/* Cart */
+
+.nav-cart {
+    padding: 8px;
+    margin-right: 8px;
+}
