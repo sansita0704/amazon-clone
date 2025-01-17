@@ -73,6 +73,7 @@ a {
 
 .border:hover {
     border: 1px solid white;
+    border-radius: 3px;
 }
 
 /* Address */
@@ -197,4 +198,76 @@ a {
 .nav-cart {
     padding: 8px;
     margin-right: 8px;
+}
+
+/* Panel */
+
+.panel {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    font-size: 1.4rem;
+}
+
+.panel-menu {
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu-icon {
+    margin-right: 5px;
+}
+
+.panel-options {
+    display: flex;
+    height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 100%;
+}
+
+/* Hero */
+
+.hero {
+    background-image: linear-gradient(
+            rgba(0, 0, 0, 0) 50%,
+            rgba(255, 255, 255, 0.2) 60%,
+            rgba(255, 255, 255, 0.5) 80%,
+            rgba(255, 255, 255, 0.7) 90%,
+            rgb(255, 255, 255) 100%
+        ),
+        url(Resources/hero_image.jpg);
+    height: 600px;
+    background-size: cover;
+    padding: 0 20px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-message {
+    background-color: white;
+    font-size: 1.4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    margin-bottom: 300px;
+}
+
+.message-link {
+    color: #2162a1;
+}
+
+.message-link:hover {
+    color: black;
+    text-decoration: underline;
 }
