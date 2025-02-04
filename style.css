@@ -242,8 +242,7 @@ a {
             rgba(0, 0, 0, 0) 50%,
             rgba(255, 255, 255, 0.2) 60%,
             rgba(255, 255, 255, 0.5) 80%,
-            rgba(255, 255, 255, 0.7) 90%,
-            rgb(255, 255, 255) 100%
+            rgba(255, 255, 255, 0.7) 90%
         ),
         url(Resources/hero_image.jpg);
     height: 600px;
@@ -270,4 +269,49 @@ a {
 .message-link:hover {
     color: black;
     text-decoration: underline;
+}
+
+/* Shop Section */
+
+.shop-section {
+    display: flex;
+    padding: 0 20px;
+    background-color: rgb(249, 194, 225);
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+/* Card */
+
+.card {
+    background-color: white;
+    font-size: 1.4rem;
+    padding: 20px;
+    width: 23.95%;
+    /* To make cards occupy equal width on screen depending on width of viewport. */
+}
+
+.card-first {
+    margin-top: -280px;
+}
+
+.card-heading {
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+.card-img {
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.card-link {
+    display: block;
+    color: rgb(33, 98, 161);
+    margin-top: 15px;
 }
