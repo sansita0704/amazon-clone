@@ -14,6 +14,7 @@
     */
 
     border: none;
+    outline: 0;
 }
 
 *:hover,
@@ -36,6 +37,22 @@ a {
 
 img {
     width: 100%;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+select {
+    background: none;
 }
 
 .btn {
@@ -82,11 +99,11 @@ img {
 
 /* Address */
 
-.nav-first {
+.nav-first-row {
     font-size: 1.2rem;
 }
 
-.nav-second {
+.nav-second-row {
     font-size: 1.4rem;
     font-weight: bold;
 }
@@ -102,7 +119,13 @@ img {
 }
 
 .address-second {
-    margin-left: 1px;
+    margin-left: -2.3px;
+}
+
+.address-icon i {
+    transform: translate(-3px, -5px);
+    font-size: 1.8rem;
+    padding-right: 2px;
 }
 
 /* Search Bar */
@@ -165,7 +188,6 @@ img {
 }
 
 .language-select {
-    background: none;
     color: white;
     font-size: 15px;
     font-weight: bold;
@@ -279,7 +301,7 @@ img {
 
 .shop-section {
     display: flex;
-    padding: 0 20px;
+    padding: 20px;
     background-color: rgb(249, 194, 225);
     flex-wrap: wrap;
     width: 100%;
@@ -301,15 +323,11 @@ img {
 }
 
 .card-first {
-    margin-top: -280px;
+    margin-top: -300px;
 }
 
 .card-heading {
     margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 2.1rem;
 }
 
 .card-img {
@@ -353,4 +371,205 @@ h2 {
 .card-img-text {
     display: inline-block;
     margin-top: 5px;
+}
+
+/* Sign-in Section */
+
+.sign-in-section {
+    padding: 30px;
+    text-align: center;
+}
+
+.sign-in-section .btn {
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #f8d523;
+}
+
+.btn-stretched {
+    border-radius: 20px;
+    padding: 10px 100px;
+}
+
+.sign-in-text {
+    font-size: 1.2rem;
+}
+
+.sign-in-link {
+    color: #2162a1;
+}
+
+.btn:hover {
+    background-color: #f9c60e;
+}
+
+/* Footer */
+
+.back-to-top-panel {
+    background: linear-gradient(#36475a 0%, #3f5268 50%);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.5rem;
+}
+
+/* Footer Panel */
+
+.footer-panel {
+    background-color: #232f3f;
+    color: white;
+    padding: 50px 220px;
+    display: flex;
+    font-size: 14px;
+}
+
+.footer-panel-vertical-column {
+    flex: 1;
+    /* For equal width distribution among all divs. */
+
+    margin-right: 80px;
+}
+
+.footer-panel-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-panel-list-item {
+    margin: 15px 0;
+}
+
+.footer-panel-list-item i {
+    margin-right: 2px;
+}
+
+.footer-panel-list-item a {
+    color: #ddd;
+}
+
+.footer-panel-list-item:hover {
+    text-decoration: underline;
+}
+
+/* Footer-brand */
+
+.footer-brand {
+    border-top: 1px solid #3a4553;
+    background-color: #232f3f;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-logo {
+    margin: 0 70px;
+    width: 100px;
+}
+
+.footer-select {
+    border: 1px solid rgb(132, 134, 136);
+    padding: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.footer-select select {
+    color: white;
+    margin-left: 5px;
+}
+
+#footer-country {
+    padding: 4px 10px;
+}
+
+#us-flag {
+    margin-right: 5px;
+    font-size: 2rem;
+}
+
+#usd-sign {
+    margin-right: 5px;
+    font-size: 1.5rem;
+}
+
+/* Footer Desc */
+
+.footer-desc {
+    background-color: rgb(19, 26, 34);
+    display: flex;
+    padding: 20px 220px;
+}
+
+.footer-desc-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    flex: 1;
+}
+
+.footer-desc-list-item {
+    margin: 20px 0;
+}
+
+.footer-desc-text {
+    font-size: 1.2rem;
+    color: #999;
+    text-decoration-color: #999;
+}
+
+.footer-desc-heading {
+    font-weight: 500;
+    color: #ddd;
+    text-decoration-color: #ddd;
+}
+
+.footer-desc-list-item a:hover .footer-desc-heading {
+    text-decoration: underline;
+    text-decoration-color: #ddd;
+}
+
+.footer-desc-list-item a:hover .footer-desc-text {
+    text-decoration: underline;
+    text-decoration-color: #999;
+}
+/* When anchor element is in hover state, then footer-desc-text will get an underline of #999 color */
+
+/* Footer Copyright */
+
+.footer-copyright {
+    background-color: rgb(19, 26, 34);
+    display: flex;
+    color: #ddd;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 220px;
+    padding-bottom: 30px;
+    font-size: 1.2rem;
+}
+
+.footer-copyright-list {
+    display: flex;
+    list-style: none;
+}
+
+.footer-copyright-list-item {
+    margin: 8px;
+}
+
+.footer-copyright-list-item a {
+    color: #ddd;
+}
+
+.footer-copyright-list-item i {
+    margin-left: 4px;
+}
+
+.footer-copyright-list-item:hover {
+    text-decoration: underline;
 }
