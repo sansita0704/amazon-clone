@@ -401,6 +401,11 @@ select {
     color: #2162a1;
 }
 
+.sign-in-link:hover {
+    color: black;
+    text-decoration: underline;
+}
+
 .btn:hover {
     background-color: #f9c60e;
 }
@@ -415,12 +420,17 @@ select {
     font-size: 1.5rem;
 }
 
+.back-to-top-panel:hover {
+    cursor: pointer;
+    background: #394757;
+}
+
 /* Footer Panel */
 
 .footer-panel {
     background-color: #232f3f;
     color: white;
-    padding: 50px 220px;
+    padding: 50px 250px;
     display: flex;
     font-size: 14px;
 }
@@ -458,7 +468,7 @@ select {
 .footer-brand {
     border-top: 1px solid #3a4553;
     background-color: #232f3f;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -502,43 +512,37 @@ select {
 
 .footer-desc {
     background-color: rgb(19, 26, 34);
-    display: flex;
-    padding: 20px 220px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 20px;
+    column-gap: 30px;
+    padding: 40px 250px;
 }
 
-.footer-desc-list {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    flex: 1;
-}
-
-.footer-desc-list-item {
-    margin: 20px 0;
-}
-
-.footer-desc-text {
-    font-size: 1.2rem;
-    color: #999;
-    text-decoration-color: #999;
-}
-
-.footer-desc-heading {
+.footer-desc-item-heading {
     font-weight: 500;
     color: #ddd;
-    text-decoration-color: #ddd;
 }
 
-.footer-desc-list-item a:hover .footer-desc-heading {
+.footer-desc-item-text {
+    font-size: 1.2rem;
+    color: #999;
+}
+
+.footer-desc-item:hover {
+    cursor: pointer;
+}
+
+.footer-desc-item:hover .footer-desc-item-heading {
     text-decoration: underline;
     text-decoration-color: #ddd;
 }
 
-.footer-desc-list-item a:hover .footer-desc-text {
+.footer-desc-item:hover .footer-desc-item-text {
     text-decoration: underline;
     text-decoration-color: #999;
 }
-/* When anchor element is in hover state, then footer-desc-text will get an underline of #999 color */
+/* When footer-desc-item is in hover state, then footer-desc-text will get an underline of #999 color */
 
 /* Footer Copyright */
 
